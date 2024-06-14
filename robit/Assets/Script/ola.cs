@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ola : MonoBehaviour
 {
     public float contador;
-    // Update is called once per frame
+
     void Update()
     {
         contador += Time.deltaTime;

@@ -7,9 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class vida : MonoBehaviour
 {
-    // Declarar una variable de vida estática
     public static int vidaActual = 100;
-
 
     public GameObject vida1;
     public GameObject vida2;
@@ -18,18 +16,18 @@ public class vida : MonoBehaviour
 
     public GameObject muertevida;
     public GameObject canwa;
-    // Start is called before the first frame update
+
     void Start()
     {
         vida1 = GameObject.FindWithTag("vida1");
         vida2 = GameObject.FindWithTag("vida2");
         vida3 = GameObject.FindWithTag("vida3");
         vida4 = GameObject.FindWithTag("vida4");
-        // Inicializar la vida actual, por ejemplo a 100
+
         vidaActual = 100;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         Debug.Log(vidaActual);
@@ -39,7 +37,7 @@ public class vida : MonoBehaviour
 
     void UpdateVidaVisual()
     {
-        // Actualizar el estado de los GameObjects de vida basándose en el valor de vidaActual
+
         if (vidaActual >= 100)
         {
             vida1.SetActive(true);

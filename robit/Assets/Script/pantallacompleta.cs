@@ -5,13 +5,8 @@ using UnityEngine.UI;
 
 public class pantallacompleta : MonoBehaviour
 {
-
-
     public Toggle toggle;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         if(Screen.fullScreen)
@@ -24,13 +19,11 @@ public class pantallacompleta : MonoBehaviour
         }
     }
 
-
     public void ActivarPantallaCompleta(bool pantallaCompleta)
     {
         Screen.fullScreen = pantallaCompleta;
     }
 
-    // Update is called once per frame
     void Update()
     {
         

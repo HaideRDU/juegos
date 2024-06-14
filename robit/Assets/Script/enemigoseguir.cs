@@ -28,7 +28,7 @@ public class enemigoseguir : MonoBehaviour
     void Start()
     {
         agente = GetComponent<NavMeshAgent>();
-        audioSource = GetComponent<AudioSource>(); // Obtener el AudioSource
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -95,7 +95,6 @@ public class enemigoseguir : MonoBehaviour
 
         rb.velocity = direccionDisparo * velocidadDeLaBala;
 
-        // Reproducir el sonido de disparo
         if (audioSource != null)
         {
             audioSource.Play();

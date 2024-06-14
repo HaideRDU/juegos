@@ -76,7 +76,6 @@ public class pause : MonoBehaviour
     {
         juegopausado = false;
         Time.timeScale = 1f;
-        //Progreso.DatosBarra.ReBarra(0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);

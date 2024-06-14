@@ -6,7 +6,6 @@ public class tiempoventana : MonoBehaviour
 {
     public float tiempazo = 5;
 
-    // Update is called once per frame
     void Update()
     {
         tiempazo -= Time.deltaTime;
